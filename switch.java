@@ -4,6 +4,8 @@ public class switch {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("1以上12以下の半角数字を入力してください。月の名前が英語で出力されます。");
+
+        if(sc.hasNextInt()){
         int Month = sc.nextInt();
 
         if (Month >= 1 && Month < 13){
@@ -56,7 +58,11 @@ public class switch {
             System.out.println("12月はDecemberです。");
             break;
         }
+    } else {
+        System.out.println("入力エラーです。1~12の数値を入力してください。");
+    } else {
+        System.out.println("数字が入力されていません。");
     }
-            System.out.println("入力エラーです。");
+}
     }
 }
