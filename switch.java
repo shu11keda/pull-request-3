@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class switch {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("1以上12以下の半角数字を入力してください。月の名前が英語で出力されます。")
+        System.out.println("1以上12以下の半角数字を入力してください。月の名前が英語で出力されます。");
         int Month = sc.nextInt();
 
-        for (Month >= 1 && Month < 13){
+        if (Month >= 1 && Month < 13){
         switch(Month){
             case 1:
             System.out.println("1月はJanuaryです。");
@@ -57,6 +57,6 @@ public class switch {
             break;
         }
     }
-            System.out.println("入力エラーです。")
+            System.out.println("入力エラーです。");
     }
 }
